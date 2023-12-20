@@ -1,0 +1,583 @@
+[
+C5
+CAP 100
+0.1uF
+
+
+
+]
+[
+C6
+CAP 100
+0.1uF
+
+
+
+]
+[
+C7
+CAP 100
+0.1uF
+
+
+
+]
+[
+C8
+CAP 100 ROUND
+33uF
+
+
+
+]
+[
+C9
+CAP 200 
+0.47u
+
+
+
+]
+[
+C10
+CAP 100 ROUND
+33uF
+
+
+
+]
+[
+C11
+CAP 100
+0.1uF
+
+
+
+]
+[
+D5
+DIODE SF34
+SF34
+
+
+
+]
+[
+D6
+DIODE SF34
+SF34
+
+
+
+]
+[
+D7
+DIODE SF34
+SF34
+
+
+
+]
+[
+D8
+DIODE SF34
+SF34
+
+
+
+]
+[
+D9
+DIODE SF34
+SF34
+
+
+
+]
+[
+D10
+DIODE SF34
+SF34
+
+
+
+]
+[
+D11
+DIODE SF34
+SF34
+
+
+
+]
+[
+D12
+DIODE SF34
+SF34
+
+
+
+]
+[
+J3
+CON 11 ROUND
+MAIN CONECTOR 1
+
+
+
+]
+[
+J4
+CON 15 ROUND
+MAIN CONECTOR 2
+
+
+
+]
+[
+J5
+CON BAT
+BAT
+
+
+
+]
+[
+J6
+CON MOTOR 10
+CON MOTOR1
+
+
+
+]
+[
+J7
+CON MOTOR 10
+CON MOTOR2
+
+
+
+]
+[
+J8
+CON 8X2
+CON CONFIG
+
+
+
+]
+[
+L1
+AXIAL-0.4 LARGE
+1uH
+
+
+
+]
+[
+R5
+AXIAL0.4
+0.5R/1W
+
+
+
+]
+[
+R6
+AXIAL0.4
+0.5R/1W
+
+
+
+]
+[
+R7
+AXIAL0.4
+330R
+
+
+
+]
+[
+R8
+AXIAL0.4
+330R
+
+
+
+]
+[
+S1
+CHAVE H-H
+POWER SWITCH
+
+
+
+]
+[
+U4
+DIP28
+LM629N
+
+
+
+]
+[
+U5
+DIP28
+LM629N
+
+
+
+]
+[
+U6
+TO220V
+LM2940CS5.0(3)
+
+
+
+]
+[
+U7
+DIP14
+MC74HC04
+
+
+
+]
+[
+U8
+ZIP-15H
+L298N(15)
+
+
+
+]
+(
+LM629 RESET
+U5-27
+U4-27
+J3-2
+)
+(
+CLK LM629
+U5-26
+U4-26
+J4-2
+)
+(
+LM629 PS
+U5-16
+U4-16
+J4-6
+)
+(
+D7
+U5-4
+U4-4
+J3-3
+)
+(
+D6
+U5-5
+U4-5
+J3-4
+)
+(
+D5
+U5-6
+U4-6
+J3-5
+)
+(
+D4
+U5-7
+U4-7
+J3-6
+)
+(
+D3
+U5-8
+U4-8
+J3-7
+)
+(
+D2
+U5-9
+U4-9
+J3-8
+)
+(
+D1
+U5-10
+U4-10
+J3-9
+)
+(
+D0
+U5-11
+U4-11
+J3-10
+)
+(
+LM629 RD
+U5-13
+U4-13
+J4-4
+)
+(
+LM629 WR
+U5-15
+U4-15
+J4-5
+)
+(
+POWER
+S1-2
+J3-1
+J5-2
+)
+(
+LM629 CS1 F
+J8-1
+J4-7
+)
+(
+RES1/LM629 CS3
+J8-2
+J4-8
+)
+(
+LM629 HI1 F
+J8-3
+J4-9
+)
+(
+RES2/LM629 HI3
+J8-4
+J4-10
+)
+(
+LM629 CS2 F
+J8-5
+J4-11
+)
+(
+RES3/LM629 CS4
+J8-6
+J4-12
+)
+(
+LM629 HI2 F
+J8-7
+J4-13
+)
+(
+RES4/LM629 HI4
+J8-8
+J4-14
+)
+(
+PWM SIGN1
+U8-6
+U4-18
+)
+(
+PWM SIGN2
+U8-11
+U5-18
+)
+(
+PWM MAG1
+U7-1
+U8-5
+U4-19
+)
+(
+PWM MAG2
+U7-13
+U8-10
+U5-19
+)
+(
+LM629 CS1
+J8-10
+J8-9
+U4-12
+)
+(
+LM629 HI1
+J8-12
+J8-11
+U4-17
+)
+(
+LM629 CS2
+J8-14
+J8-13
+U5-12
+)
+(
+LM629 HI2
+J8-16
+J8-15
+U5-17
+)
+(
+PWM MAG1 INV
+U7-2
+U8-7
+)
+(
+PWM MAG2 INV
+U7-12
+U8-12
+)
+(
+N00034
+U8-1
+R5-1
+)
+(
+N00035
+U8-15
+R6-1
+)
+(
+MOTOR2 OUT1
+D11-K
+D9-A
+J7-1
+U8-13
+)
+(
+GND MOTOR
+D7-A
+D8-A
+D11-A
+D12-A
+R5-2
+R6-2
+U8-8
+C8-2
+J5-1
+L1-1
+)
+(
+MOTOR1 OUT1
+D7-K
+D5-A
+J6-1
+U8-2
+)
+(
+VBAT
+D5-K
+D6-K
+D9-K
+D10-K
+C8-1
+U8-4
+S1-3
+C9-1
+U6-1
+J4-3
+)
+(
+MOTOR2 OUT2
+D10-A
+D12-K
+J7-6
+U8-14
+)
+(
+MOTOR1 OUT2
+D6-A
+D8-K
+J6-6
+U8-3
+)
+(
+N00042
+R7-1
+J6-10
+)
+(
+N00043
+R8-1
+J7-10
+)
+(
+LM629 ENCODER A1
+J6-3
+U4-2
+)
+(
+LM629 ENCODER B1
+J6-4
+U4-3
+)
+(
+VCC
+J7-2
+J6-2
+R8-2
+R7-2
+C11-1
+U8-9
+C7-1
+U6-3
+C10-1
+U5-28
+U5-1
+C6-1
+U4-28
+U4-1
+C5-1
+J4-1
+J3-11
+U7-14
+)
+(
+LM629 ENCODER A2
+J7-3
+U5-2
+)
+(
+LM629 ENCODER B2
+J7-4
+U5-3
+)
+(
+GND
+J7-5
+J6-5
+C11-2
+C7-2
+C10-2
+U6-2
+C9-2
+C6-2
+C5-2
+U5-14
+U4-14
+L1-2
+J4-15
+J7-8
+J6-8
+U7-7
+U4-25
+U4-24
+U4-23
+U4-22
+U4-21
+U4-20
+U5-25
+U5-24
+U5-23
+U5-22
+U5-21
+U5-20
+)
+
